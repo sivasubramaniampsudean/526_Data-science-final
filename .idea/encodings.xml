@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/data/class.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cluster/DBSCAN_out.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cluster/data1.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cluster/data2.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cluster/data3.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cluster/data4.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cluster/k_means_out.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/data_matrix.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/dest_data_final.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/frequent_file_Apri.txt" charset="GB18030" />
+    <file url="file://$PROJECT_DIR$/data/frequent_file_FP.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/out.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/output.rst" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/实验一结果/第一次药物频次统计表.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/实验一结果/预处理之后的方剂数据.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/实验一结果/预处理之后的药物频次统计表.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/实验二结果/Apriori核心药物组合.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/实验二结果/FP-growth核心药物组合.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/实验四结果/DBSCAN聚类结果.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/实验四结果/K-means聚类结果.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/DataPreHandle/CountDivider.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/DataPreHandle/Counter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/DataPreHandle/DataMatrix.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/associations/AprioriMining.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/associations/DataSet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/associations/FP_GrowthMining.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/clustering/ClusterDataSet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/clustering/DBSCAN.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/clustering/K_Means.java" charset="UTF-8" />
+  </component>
+</project>
