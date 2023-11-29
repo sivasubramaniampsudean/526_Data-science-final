@@ -11,26 +11,6 @@ public class K_Means {
 	public static void main(String[] args) throws Exception{
 		ClusterDataSet dataSet = new ClusterDataSet("./data/cluster/data1.txt","./data/cluster/data2.txt","./data/cluster/data3.txt","./data/cluster/data4.txt");
 		
-//		for(int i=0;i<dataSet.data_set.size();i++){
-//			if(i==228){
-//				System.out.print(dataSet.data_set.get(i).medicineName);
-//				for(int j=0;j<dataSet.xing_attrs.size()+dataSet.wei_attrs.size()+dataSet.guijing_attrs.size();j++){
-//					System.out.print(dataSet.data_set.get(i).Attrs.get(j)+" ");
-//				}
-//				System.out.println();
-//			}
-//		}
-//		System.out.println(dataSet.xing_attrs.size()+dataSet.wei_attrs.size()+dataSet.guijing_attrs.size());
-//		for(int i=0;i<dataSet.xing_attrs.size();i++){
-//			System.out.print(dataSet.xing_attrs.get(i)+" ");
-//		}
-//		for(int i=0;i<dataSet.wei_attrs.size();i++){
-//			System.out.print(dataSet.wei_attrs.get(i)+" ");
-//		}
-//		for(int i=0;i<dataSet.guijing_attrs.size();i++){
-//			System.out.print(dataSet.guijing_attrs.get(i)+" ");
-//		}
-		
 		ArrayList<Cluster> clusters = new ArrayList<Cluster>();
 		for(int i=0;i<K_CLUSTERS;i++){
 			clusters.add(new Cluster());
@@ -56,28 +36,6 @@ public class K_Means {
 				break;
 			}
 		}
-//		for(int i=0;i<K_CLUSTERS;i++){
-//			System.out.print(dataSet.data_set.get(center[i]).medicineName);
-//			for(int j=0;j<dataSet.xing_attrs.size()+dataSet.wei_attrs.size()+dataSet.guijing_attrs.size();j++){
-//				System.out.print(dataSet.data_set.get(center[i]).Attrs.get(j)+" ");
-//			}
-//			System.out.println();
-//		}
-//		for(int i=0;i<K_CLUSTERS;i++)
-//			System.out.println(center[i]);
-		
-		double center_coordinate[][] = new double[K_CLUSTERS][dataSet.xing_attrs.size()+dataSet.wei_attrs.size()+dataSet.guijing_attrs.size()];
-		for(int i=0;i<K_CLUSTERS;i++){
-			for(int j=0;j<dataSet.xing_attrs.size()+dataSet.wei_attrs.size()+dataSet.guijing_attrs.size();j++){
-				center_coordinate[i][j] = (int)dataSet.data_set.get(center[i]).Attrs.get(j);
-			}
-		}
-//		for(int i=0;i<K_CLUSTERS;i++){
-//			for(int j=0;j<dataSet.xing_attrs.size()+dataSet.wei_attrs.size()+dataSet.guijing_attrs.size();j++){
-//				System.out.print(center_coordinate[i][j]+" ");
-//			}
-//			System.out.println();
-//		}
 		
 		double distance[] = new double[K_CLUSTERS];
 		int min_index;
@@ -119,16 +77,6 @@ public class K_Means {
 				}
 			}
 			
-//			for(int i=0;i<K_CLUSTERS;i++){
-//				for(int j=0;j<clusters.get(i).members.size();j++){
-//					System.out.print((int)clusters.get(i).members.get(j)+" ");
-//				}
-//				System.out.println();
-//				for(int j=0;j<last_clusters.get(i).members.size();j++){
-//					System.out.print((int)last_clusters.get(i).members.get(j)+" ");
-//				}
-//				System.out.println();
-//			}
 			//not equal
 			if(!equal_flag){
 				for(int i=0;i<K_CLUSTERS;i++){
@@ -151,13 +99,6 @@ public class K_Means {
 			}else{
 				break;
 			}
-//			for(int i=0;i<K_CLUSTERS;i++){
-//				for(int j=0;j<dataSet.xing_attrs.size()+dataSet.wei_attrs.size()+dataSet.guijing_attrs.size();j++){
-//					System.out.print(center_coordinate[i][j]+" ");
-//				}
-//				System.out.println();
-//			}
-		}
 		
 		File output_file = new File("./data/cluster/k_means_out.txt");
 		FileWriter writer = new FileWriter(output_file);
