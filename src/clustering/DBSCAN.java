@@ -64,9 +64,9 @@ public class DBSCAN {
 		}
 		File output_file = new File("./data/cluster/DBSCAN_out.txt");
 		FileWriter writer = new FileWriter(output_file);
-		writer.write("离群点：\n");
+		writer.write("Outliers：\n");
 		int count_out=0;
-		//离群点
+		
 		for(int i=0;i<dataSet.dataSet.data_set.size();i++){
 			if(!is_in_clusters(clusters,i)){
 				count_out++;
@@ -74,10 +74,10 @@ public class DBSCAN {
 				writer.write(dataSet.dataSet.data_set.get(i).medicineName+" ");
 			}
 		}
-		System.out.println("\n"+count_out+"个离群点");
-		writer.write("\n"+count_out+"个离群点"+"\n聚类结果：\n");
+		System.out.println("\n"+count_out+"Outliers");
+		writer.write("\n"+count_out+"Outliers"+"\nClustering：\n");
 		
-		//聚类结果
+		
 		for(int i=0;i<clusters.size();i++){
 			for(int j=0;j<clusters.get(i).members.size();j++){
 				System.out.print(clusters.get(i).members.get(j)+" ");
