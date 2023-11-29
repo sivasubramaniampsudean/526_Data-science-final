@@ -51,12 +51,7 @@ public class DecisionTreeTest {
 				testSet[i-1][j] = (int)dataSet.data_set.get(i).attributes.get(j);
 			}
 		}
-//		for(int i=1;i<dataSet.data_set.size();i++){
-//			for(int j=0;j<dataSet.data_set.get(0).attributes.size();j++){
-//				System.out.print(testSet[i-1][j]);
-//			}
-//			System.out.println();
-//		}
+
 		int test_class[] = new int[dataSet.data_set.size()-1];
 		for(int i=1;i<dataSet.data_set.size();i++){
 			test_class[i-1] = DTree.searchTree(testSet[i-1]);
