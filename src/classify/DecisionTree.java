@@ -49,29 +49,7 @@ public class DecisionTree {
 			ClassifyDataSet childDataSet0 = new ClassifyDataSet(divideAttr,0,dataSet);
 			ClassifyDataSet childDataSet1 = new ClassifyDataSet(divideAttr,1,dataSet);
 			
-//			for(int i=0;i<dataSet.data_set.size();i++){
-//				System.out.print(dataSet.data_set.get(i).attributes.size()+" ");
-//				for(int k=0;k<dataSet.data_set.get(i).attributes.size();k++){
-//					System.out.print(dataSet.data_set.get(i).attributes.get(k)+" ");
-//				}
-//				System.out.println(dataSet.data_set.get(i).i_class);
-//			}
-//			
-//			for(int i=0;i<childDataSet0.data_set.size();i++){
-//				System.out.print(childDataSet0.data_set.get(i).attributes.size()+" ");
-//				for(int k=0;k<childDataSet0.data_set.get(i).attributes.size();k++){
-//					System.out.print(childDataSet0.data_set.get(i).attributes.get(k)+" ");
-//				}
-//				System.out.println(childDataSet0.data_set.get(i).i_class);
-//			}
-//			
-//			for(int i=0;i<childDataSet1.data_set.size();i++){
-//				System.out.print(childDataSet1.data_set.get(i).attributes.size()+" ");
-//				for(int k=0;k<childDataSet1.data_set.get(i).attributes.size();k++){
-//					System.out.print(childDataSet1.data_set.get(i).attributes.get(k)+" ");
-//				}
-//				System.out.println(childDataSet1.data_set.get(i).i_class);
-//			}
+
 			
 			tree.add(new DecisionTreeNode(false,divideAttr,father,fatherValue));
 			int deeperFather = tree.size()-1;
